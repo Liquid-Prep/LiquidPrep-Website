@@ -1,16 +1,16 @@
 # SITE CONFIGURATION
-baseurl: ""
+baseurl: "/liquid-prep-demo-site"
 url: "https://cnesen.github.io"
 
 # THEME-SPECIFIC CONFIGURATION
 title: Liquid Prep                                   # site's title
 description: "Optimizing water usage for small farmers"      # used by search engines
-avatar: assets/img/triangle.png                         # Empty for no avatar in navbar
-favicon: assets/favicon.ico                             # Icon displayed in the tab
+avatar: assets/img/LiquidPrep.png                         # Empty for no avatar in navbar
+favicon: assets/favicon.png                             # Icon displayed in the tab
 
 # Header and footer text
 header_text: Optimizing water usage for small farmers # Change Blog header text
-header_feature_image: assets/img/pexels/triangular.jpeg
+header_feature_image: assets/img/pexels/banner.png
 footer_text: 
 
 # Blog
