@@ -5,18 +5,18 @@ url: "https://cnesen.github.io"
 # THEME-SPECIFIC CONFIGURATION
 title: Liquid Prep                                   # site's title
 description: "Optimizing water usage for small farmers"      # used by search engines
-avatar: assets/img/LiquidPrep.png                         # Empty for no avatar in navbar
-favicon: assets/favicon.png                             # Icon displayed in the tab
+avatar: assets/img/core/LiquidPrep.png                         # Empty for no avatar in navbar
+favicon: assets/img/core/favicon.png                             # Icon displayed in the tab
 
 # Header and footer text
-header_text: Optimizing water usage for small farmers # Change Blog header text
-header_feature_image: assets/img/pexels/banner.png
+header_text: Blog # Change Blog header text
+header_feature_image: assets/img/core/gray.png
 footer_text: 
 
 # Blog
 excerpt: true                                           # Or "truncate" (first 250 characters), "false" to disable
 post_navigation: true
-color_image: /assets/img/lineart.png                    # A bit transparent for color posts.
+color_image: /assets/img/core/lineart.png                    # A bit transparent for color posts.
 
 # Features
 # More in the _data folder for share buttons, author and language

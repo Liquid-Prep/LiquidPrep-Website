@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Building an IoT sensor for the common farmer
-feature-img: "assets/img/pexels/farm-banner.jpeg"
+feature-img: "assets/img/blogs/2021-05-27-sensor-building/farm-banner.jpeg"
+thumbnail: "assets/img/blogs/2021-05-27-sensor-building/farm-banner.jpeg"
 author: cnesen
 ---
 
@@ -30,7 +31,7 @@ Once the parts arrived at my house, our next couple meetings consisted of me poi
 After a few sessions, we had our sensor working. We used a glass of water to calibrate it and we could see the real-time sensor readings on my computer screen. I even ran outside to give it a quick test in some actual soil. We mounted the moisture sensor and microcontroller to a 30cm ruler stick and we were done! 
 
 <center> <h3>Version 1 Sensor</h3> </center>
-{% include aligner.html images="pexels/sensor_v1.jpg" column=1 %}
+{% include aligner.html images="blogs/2021-05-27-sensor-building/sensor_v1.jpg" column=1 %}
 
 Although it did not use the most robust parts and would still need significant durability enhancements before it could be used regularly on a farm; it proved that we could successfully measure the moisture of a soil sample and send that signal to an external device like a computer or smartphone (and all for under $25 CAD)!
 
@@ -39,7 +40,7 @@ In September, our Liquid Prep team participated in a virtual deployment where we
 This time, I had the resources to order numerous parts and experiment with different materials and tools to simplify the sensors construction and increase its durability. The largest challenge while building up the sensors durability was to ensure I continue using off-the-shelf parts. Custom-made/proprietary hardware has its advantages: ease of connectivity between parts, perfect fit, and specific function; but these advantages come at a cost and would prohibit us from delivering a product small farmers could actually afford. We had to think outside the box and use everyday materials wherever we could.
 
 <center> <h3>Version 2 Sensor</h3> </center>
-{% include aligner.html images="pexels/sensor_v2.jpg" column=1 %}
+{% include aligner.html images="blogs/2021-05-27-sensor-building/sensor_v2.jpg" column=1 %}
 
 The V2 sensor can be seen above. Notice the improvements over the V1 sensor. 
 
