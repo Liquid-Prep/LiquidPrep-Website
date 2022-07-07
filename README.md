@@ -1,28 +1,8 @@
-# Type on Strap 🎨
+#  LiquidPrep-Website
 
-[![Build](https://github.com/sylhare/Type-on-Strap/actions/workflows/jekyll-build.yml/badge.svg)](https://github.com/sylhare/Type-on-Strap/actions/workflows/jekyll-build.yml)
-[![Gem Version](https://badge.fury.io/rb/type-on-strap.svg)](https://badge.fury.io/rb/type-on-strap)
-[![Docker Pulls](https://img.shields.io/docker/pulls/sylhare/type-on-strap)](https://hub.docker.com/r/sylhare/type-on-strap)
 
-[![Default Type on Strap blog](https://github.com/Sylhare/Type-on-Strap/blob/master/assets/img/screenshot.png?raw=true)](https://sylhare.github.io/Type-on-Strap/)
+This site is based off the free and open-source [Type on Strap](https://github.com/sylhare/Type-On-Strap) theme. For a full list of features and customization  options please check out that project. The readme below is a snippet from the official page.
 
-A free and open-source [Jekyll](https://jekyllrb.com) theme. Based on Rohan Chandra [type-theme](https://github.com/rohanchandra/type-theme) packed with extra features and easily customizable:
-
-* Responsive design on all devices (🖥, 💻, 📱, ...)
-* Portfolio 🗂, Gallery 🖼 pages for your projects
-* Multi comments 💬 options  
-* Tags compatibility 🏷
-* Handle _Bootstrap_'ed pages: [Get Bootstrap](http://getbootstrap.com/)
-* 🔎 Search feature: [Simple-Jekyll-Search](https://github.com/christian-fei/Simple-Jekyll-Search)
-* Math Rendering : [KateX](https://github.com/Khan/KaTeX)
-* Diagram Rendering: [Mermaid-js](https://github.com/mermaid-js/mermaid)
-* 🖋 Nice fonts: [Font Awesome](https://fontawesome.com/), [Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro), [Pacifico](https://fonts.google.com/specimen/Pacifico?selection.family=Pacifico) 
-* Seo Tags: [Jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag)
-* 🛠 Syntax Highlighting: Easily customisable [Base16](https://github.com/chriskempson/base16)
-* 💡 Light and dark theme supported
-* Find free of rights images on [pexels](https://www.pexels.com/)
-
-> [Demo Site](https://sylhare.github.io/Type-on-Strap/) 
 
 ## Usage
 
@@ -34,7 +14,7 @@ Check out this tutorial: [Use as Ruby Gem](#use-as-ruby-gem-)
 
 ### As a github page 📋
 
-1. Fork and clone the [Type on Strap repo](https://github.com/sylhare/Type-On-Strap): `git clone https://github.com/Sylhare/Type-on-Strap.git`
+1. Fork and clone the [LiquidPrep-Website repo](https://github.com/Liquid-Prep/LiquidPrep-Website): `git clone https://github.com/Liquid-Prep/LiquidPrep-Website.git`
 2. Install [Jekyll](https://jekyllrb.com/docs/installation/): `gem install jekyll`, check [#1](https://github.com/Sylhare/Type-on-Strap/issues/1) if you have a problem.
 3. Install the theme's dependencies: `bundle install`
 4. Customize the theme
