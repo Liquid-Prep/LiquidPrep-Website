@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
-baseurl: "/liquid-prep-demo-site"
-url: "https://cnesen.github.io"
+baseurl: "/website"
+url: "https://Liquid-Prep.github.io"
 
 # THEME-SPECIFIC CONFIGURATION
 title: Liquid Prep                                   # site's title
