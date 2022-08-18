@@ -1,5 +1,5 @@
 # SITE CONFIGURATION
-baseurl: "/website"
+baseurl: "/LiquidPrep-Website"
 url: "https://Liquid-Prep.github.io"
 
 # THEME-SPECIFIC CONFIGURATION
