@@ -1,5 +1,6 @@
 #  LiquidPrep-Website
 
+The Liquid-Prep website is live here: [https://liquid-prep.github.io/LiquidPrep-Website/](https://liquid-prep.github.io/LiquidPrep-Website/).
 
 This site is based off the free and open-source [Type on Strap](https://github.com/sylhare/Type-On-Strap) theme. For a full list of features and customization  options please check out that project. The readme below is a snippet from the official page.
 
