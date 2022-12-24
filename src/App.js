@@ -12,7 +12,7 @@ function App() {
     return (
         <div style={{ marginTop: "10rem", textAlign: "center" }}>
             <head>
-                <title>UConn AI</title>
+                <title>LiquidPrep</title>
             </head>
             <Routes>
                 <Route path="/" element={<HomePage />} />
