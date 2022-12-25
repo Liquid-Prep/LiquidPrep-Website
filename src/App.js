@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 
 import HomePage from "./Pages/Home";
+import Navbar from "./common/navbar"
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
             <head>
                 <title>LiquidPrep</title>
             </head>
+            <Navbar />
             <Routes>
                 <Route path="/" element={<HomePage />} />
             </Routes>

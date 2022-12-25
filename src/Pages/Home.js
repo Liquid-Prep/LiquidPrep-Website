@@ -1,11 +1,14 @@
 import React from "react";
 
+import "../css/Homepage.css"
+
 function HomePage() {
     return (
         <div>
-            <p>
-                Testing
-            </p>
+            <h2 className="topFarmerText">
+                Bringing water 
+                advice to all farmers.
+            </h2>
         </div>
     )
 }
