@@ -1,12 +1,12 @@
 @import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,200&family=Poppins:wght@300&display=swap";
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap');
+
 .header {
-  background: rgba(32, 32, 32, 0);
+  background: #9ec5e900;
   /* width: 100%; */
   height: 100px;
-  padding: 0 1.5rem;
+  /* padding: 0 1.5rem;
   padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-right: 1.5rem; */
   transition: 0.3s ease all;
   font-family: "IBM Plenx Sans", sans-serif;
 }
@@ -19,7 +19,7 @@
   overflow: hidden;
   color: #000;
   margin: 0 auto;
-  max-width: 1920px;
+  /* max-width: 1920px; */
   height: 100%;
   display: flex;
   align-items: center;
@@ -62,16 +62,16 @@
 }
 .header__content__nav ul {
   list-style: none;
-  padding: 0;
+  /* padding: 0; */
   display: flex;
   flex-direction: column;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 @media (min-width: 48em) {
   .header__content__nav ul {
     flex-direction: row;
     align-items: center;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
     margin-right: calc(0.5rem + 16px);
   }
 }
