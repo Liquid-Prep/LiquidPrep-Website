@@ -10,7 +10,7 @@ import HomePage from "./Pages/Home";
 
 function App() {
     return (
-        <div style={{ marginTop: "10rem", textAlign: "center" }}>
+        <div style={{  textAlign: "center" }}>
             <head>
                 <title>LiquidPrep</title>
             </head>
