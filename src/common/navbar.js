@@ -37,7 +37,7 @@ const Navbar = () => {
     <header className="header">
       <div className="header__content">
         <Link to="/" className="header__content__logo">
-          Navbar
+          LiquidPrep
         </Link>
         <nav
           className={`${"header__content__nav"} 

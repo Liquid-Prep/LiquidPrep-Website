@@ -1,10 +1,14 @@
 @import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,200&family=Poppins:wght@300&display=swap";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap');
 .header {
-  background: rgb(32, 32, 32);
-  width: 100%;
+  background: rgba(32, 32, 32, 0);
+  /* width: 100%; */
   height: 100px;
   padding: 0 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   transition: 0.3s ease all;
+  font-family: "IBM Plenx Sans", sans-serif;
 }
 @media (min-width: 48em) {
   .header {
@@ -13,7 +17,7 @@
 }
 .header__content {
   overflow: hidden;
-  color: #fff;
+  color: #000;
   margin: 0 auto;
   max-width: 1920px;
   height: 100%;
@@ -27,7 +31,7 @@
   font-size: 2rem;
   font-weight: 700;
   text-decoration: none;
-  color: #fff;
+  color: #000;
 }
 .header__content__nav {
   top: 0;
@@ -61,7 +65,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
 }
 @media (min-width: 48em) {
   .header__content__nav ul {
@@ -104,16 +108,16 @@
   border-radius: 12px;
   font-size: 1rem;
   font-family: inherit;
-  background: rgb(162, 162, 246);
-  color: #202020;
+  background: #4F83AE;
+  color: #fff;
   border: 1px solid transparent;
   transition: 0.3s ease all;
   margin: 0.5em;
 }
 .header__content__nav .btn:hover {
-  border-color: #a2a2f6;
+  border-color: #4F83AE;
   background: rgba(162, 162, 246, 0.1);
-  color: #a2a2f6;
+  color: #202020;
 }
 .header__content__nav .btn:active {
   border-color: #a2a2f6;
