@@ -9,7 +9,7 @@ function HomePage() {
     <div>
       <Center padding={"3rem"}>
         <HStack>
-          <Stack padding={"2rem"}>
+          <Stack padding={"1rem"}>
             <Text align={"left"} fontSize="3xl">
               Bringing water <br />
               advice to all farmers.
@@ -23,23 +23,29 @@ function HomePage() {
               right decisions regarding watering their crops.
               <br />
             </Text>
+            <Button
+              borderRadius={"100px"}
+              background={"#fffffff"}
+              borderColor={"black"}
+              padding={"1rem"}
+              variant={"outline"}
+              width={"10rem"}
+            >
+              Get Involved
+            </Button>
           </Stack>
           <Image src={require("../assets/logo.png")} />
         </HStack>
+      </Center>
+      <Center>
+        <Stack mt={"20rem"}>
+            <Text align={"left"} fontSize="3xl">
+              About Liquid Prep
+            </Text>
+          </Stack>
       </Center>
     </div>
   );
 }
 
 export default HomePage;
-
-
-{/* <Button
-              borderRadius={"100px"}
-              background={"#fffffff"}
-              borderColor={"black"}
-              padding={"1rem"}
-              variant={"outline"}
-            >
-              Get Involved
-            </Button> */}
