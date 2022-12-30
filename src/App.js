@@ -11,7 +11,7 @@ import Navbar from "./common/navbar"
 
 function App() {
     return (
-        <div style={{  textAlign: "center" }}>
+        <div style={{  textAlign: "center", background:"#9DC4E8", backgroundSize: "cover", height: "100vh" }}>
             <head>
                 <title>LiquidPrep</title>
             </head>
