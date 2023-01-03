@@ -100,7 +100,7 @@ function HomePage() {
           </HStack>
         </Stack>
       </Center>
-      <Image src={require("../assets/homepage-background.png")}/>
+      <Image src={require("../assets/homepage-background.png")} />
     </div>
   );
 }
