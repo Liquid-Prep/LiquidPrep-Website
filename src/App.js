@@ -9,9 +9,11 @@ import {
 import HomePage from "./Pages/Home";
 import Navbar from "./common/navbar"
 
+
 function App() {
     return (
-        <div style={{  textAlign: "center", background:"#9DC4E8", backgroundSize: "fill" }}>
+        <div style={{  textAlign: "center", backgroundImage: "linear-gradient(to right, #a9c6e4, #ccdbf0)"
+        , backgroundSize: "fill" }}>
             <head>
                 <title>LiquidPrep</title>
             </head>
