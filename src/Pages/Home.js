@@ -47,7 +47,7 @@ function HomePage() {
         </HStack>
       </Center>
       <Center>
-        <Stack mt={"20rem"} ml={"12rem"}>
+        <Stack mt={"20rem"} ml={"10rem"}>
           <Text align={"left"} fontSize="3xl" fontWeight={"bold"}>
             About Liquid Prep
           </Text>
@@ -76,7 +76,7 @@ function HomePage() {
               we help them manage their watering decisions. <br />
             </Text>
             <Box>
-              <Text align={"left"} ml={40}>
+              <Text align={"left"} ml={20}>
                 Participation is welcomed from software developers, designers,{" "}
                 <br />
                 testers, agronomists/agri experts/soil experts, IoT engineers,{" "}
@@ -100,7 +100,18 @@ function HomePage() {
           </HStack>
         </Stack>
       </Center>
-      <Image src={require("../assets/homepage-background.png")} />
+      <Image
+        src={require("../assets/homepage-background.png")}
+        style={{
+          position: "relative",
+          width: "100vw",
+          maxWidth: "100vw",
+          left: "50%",
+          right: "50%",
+          marginLeft: "-50vw",
+          marginRight: "-50vw",
+        }}
+      />
     </div>
   );
 }
