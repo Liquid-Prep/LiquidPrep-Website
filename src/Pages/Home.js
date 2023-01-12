@@ -9,6 +9,7 @@ import {
   Flex,
   HStack,
   Center,
+  Card,
 } from "@chakra-ui/react";
 
 
@@ -111,6 +112,53 @@ function HomePage() {
           marginRight: "-50vw",
         }}
       />
+      <Center backgroundColor="white">
+        <HStack>
+          <Stack
+            direction={"column"}
+            paddingTop={"5rem"}
+            backgroundColor="white"
+            // ml={"10rem"}
+          >
+            <Text align={"left"} fontSize="3xl" fontWeight={"bold"}>
+              Our Mission
+            </Text>
+            <Stack direction={"row"} paddingTop={"3rem"}>
+              <Card maxW={"sm"}>
+                <Image
+                  src={require("../assets/small-lavender-field.png")}
+                  maxW={{ base: "90%" }}
+                  objectFit="fill"
+                ></Image>
+                <Text align={"left"} paddingTop="1rem" fontSize={"1.5rem"}>
+                  Supporing small-scale farmers
+                </Text>
+              </Card>
+              <Card maxW={"sm"}>
+                <Image
+                  maxW={{ base: "90%" }}
+                  src={require("../assets/small-lavender-field.png")}
+                  objectFit="fill"
+                ></Image>
+                <Text align={"left"} paddingTop="1rem" fontSize={"1.5rem"}>
+                  Accessible to everyone
+                </Text>
+              </Card>
+              <Card maxW={"sm"}>
+                <Image
+                  maxW={{ base: "90%" }}
+                  src={require("../assets/small-lavender-field.png")}
+                  scale="20%"
+                  objectFit="fill"
+                ></Image>
+                <Text align={"left"} paddingTop="1rem" fontSize={"1.5rem"}>
+                  Latest Technologies
+                </Text>
+              </Card>
+            </Stack>
+          </Stack>
+        </HStack>
+      </Center>
     </div>
   );
 }
