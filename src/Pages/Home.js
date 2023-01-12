@@ -11,7 +11,6 @@ import {
   Center,
 } from "@chakra-ui/react";
 
-// </Stack>m={35} paddingRight={"5rem"}>
 
 function HomePage() {
   return (
