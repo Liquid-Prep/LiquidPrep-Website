@@ -1,41 +1,37 @@
 on:
-  # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
-
-  # Allows you to run this workflow manually from the Actions tab
- 
-
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+    branches:
+      - main
+  pull_request:
 
 jobs:
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Setup Git 
-        uses: actions/setup
-      - name: Setup Node Environment
+      - uses: actions/checkout@v3
+
+      - name: Setup Node
         uses: actions/setup-node@v3
-        with: 
-          node-version-file: .nvmrc
-          cache: "npm"
-      - name: Install Dependencies
-        run: npm i
-      - name: Build 
-        run: npm run build 
-      - id: deploy
-        name: Deploy to Github Pages
-        uses: fcodelabs/react-deploy-github-pages-action@v1.0.0
         with:
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          node-version-file: .nvmrc
+
+      - name: Cache dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - run: npm run build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'refs/heads/main' }}
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
