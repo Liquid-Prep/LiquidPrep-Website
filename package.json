@@ -41,5 +41,6 @@
   },
   "devDependencies": {
     "prettier": "^2.8.1"
-  }
+  },
+  "homepage": "http://uconnai.github.io/LiquidPrep-Website"
 }
