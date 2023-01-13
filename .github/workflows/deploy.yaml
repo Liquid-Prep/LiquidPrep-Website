@@ -32,5 +32,5 @@ jobs:
       - name: Build 
         uses: npm run build 
       - name: Deploy 
-        uses: node_modules/.bin/gh-pages -b gh-pages -d build
+        run: node_modules/.bin/gh-pages -b gh-pages -d build
       
