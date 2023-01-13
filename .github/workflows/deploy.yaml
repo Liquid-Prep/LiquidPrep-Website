@@ -16,13 +16,13 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.build-publish.outputs.page_url }}
+      url: ${{ steps.deploy.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Setup Git 
-        uses: fregante/setup-git-user@v1
+        uses: actions/setup
       - name: Setup Node Environment
         uses: actions/setup-node@v3
         with: 
@@ -30,10 +30,12 @@ jobs:
           cache: "npm"
       - name: Install Dependencies
         run: npm i
-      - name: Install gh-pages
-        run: npm i gh-pages
       - name: Build 
         run: npm run build 
-      - name: Deploy 
-        run: node_modules/.bin/gh-pages -b gh-pages -d build
-      
+      - id: deploy
+        name: Deploy to Github Pages
+        uses: fcodelabs/react-deploy-github-pages-action@v1.0.0
+        with:
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
