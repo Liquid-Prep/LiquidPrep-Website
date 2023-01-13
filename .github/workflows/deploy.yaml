@@ -30,6 +30,8 @@ jobs:
           cache: "npm"
       - name: Install Dependencies
         run: npm i
+      - name: Install gh-pages
+        run: npm i gh-pages
       - name: Build 
         run: npm run build 
       - name: Deploy 
