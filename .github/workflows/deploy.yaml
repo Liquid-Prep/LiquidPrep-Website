@@ -30,7 +30,7 @@ jobs:
           cache: "npm"
           
       - name: Build 
-        uses: npm run build 
+        run: npm run build 
       - name: Deploy 
         run: node_modules/.bin/gh-pages -b gh-pages -d build
       
