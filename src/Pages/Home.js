@@ -113,7 +113,6 @@ function HomePage() {
         }}
       />
       <Center backgroundColor="white">
-        <HStack>
           <Stack
             direction={"column"}
             paddingTop={"5rem"}
@@ -124,29 +123,29 @@ function HomePage() {
               Our Mission
             </Text>
             <Stack direction={"row"} paddingTop={"3rem"}>
-              <Card maxW={"sm"}>
+              <Box maxW={"sm"}>
                 <Image
                   src={require("../assets/small-lavender-field.png")}
-                  maxW={{ base: "90%" }}
+                  // maxW={{ base: "90%" }}
                   objectFit="fill"
                 ></Image>
                 <Text align={"left"} paddingTop="1rem" fontSize={"1.5rem"}>
                   Supporing small-scale farmers
                 </Text>
-              </Card>
-              <Card maxW={"sm"}>
+              </Box>
+              <Box maxW={"sm"}>
                 <Image
-                  maxW={{ base: "90%" }}
-                  src={require("../assets/small-lavender-field.png")}
+                  // maxW={{ base: "99%" }}
+                  src={require("../assets/accessibility-image.jpg")}
                   objectFit="fill"
                 ></Image>
                 <Text align={"left"} paddingTop="1rem" fontSize={"1.5rem"}>
                   Accessible to everyone
                 </Text>
-              </Card>
-              <Card maxW={"sm"}>
+              </Box>
+              <Box maxW={"sm"}>
                 <Image
-                  maxW={{ base: "90%" }}
+                  // maxW={{ base: "90%" }}
                   src={require("../assets/small-lavender-field.png")}
                   scale="20%"
                   objectFit="fill"
@@ -154,9 +153,42 @@ function HomePage() {
                 <Text align={"left"} paddingTop="1rem" fontSize={"1.5rem"}>
                   Latest Technologies
                 </Text>
-              </Card>
+              </Box>
             </Stack>
           </Stack>
+          
+      </Center>
+      <Center backgroundColor="white">
+        <HStack>
+          <Stack
+            direction={"column"}
+            paddingTop={"5rem"}
+            backgroundColor="white"
+            // ml={"10rem"}
+          >
+            <Text align={"left"} fontSize="3xl" fontWeight={"bold"} paddingRight="10rem">
+              Our Partners
+            </Text>
+            <Stack direction={"row"} paddingTop={"3rem"}>
+              <Box maxW={"sm"}>
+                <Image
+                  src={require("../assets/call-for-code.png")}
+                  // maxW={{ base: "110%" }}
+                  objectFit="fill"
+                ></Image>
+
+              </Box>
+              <Box maxW={"sm"}>
+                <Image
+                  // maxW={{ base: "99%" }}
+                  src={require("../assets/Linux_Foundation_logo.png")}
+                  objectFit="fill"
+                ></Image>
+
+              </Box>
+            </Stack>
+          </Stack>
+          
         </HStack>
       </Center>
     </div>
