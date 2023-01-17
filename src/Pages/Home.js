@@ -10,8 +10,11 @@ import {
   HStack,
   Center,
   Card,
+  CardHeader,
+  CardFooter,
+  CardBody,
+  Heading,
 } from "@chakra-ui/react";
-
 
 function HomePage() {
   return (
@@ -113,50 +116,49 @@ function HomePage() {
         }}
       />
       <Center backgroundColor="white">
-          <Stack
-            direction={"column"}
-            paddingTop={"5rem"}
-            backgroundColor="white"
-            // ml={"10rem"}
-          >
-            <Text align={"left"} fontSize="3xl" fontWeight={"bold"}>
-              Our Mission
-            </Text>
-            <Stack direction={"row"} paddingTop={"3rem"}>
-              <Box maxW={"sm"}>
-                <Image
-                  src={require("../assets/small-lavender-field.png")}
-                  // maxW={{ base: "90%" }}
-                  objectFit="fill"
-                ></Image>
-                <Text align={"left"} paddingTop="1rem" fontSize={"1.5rem"}>
-                  Supporing small-scale farmers
-                </Text>
-              </Box>
-              <Box maxW={"sm"}>
-                <Image
-                  // maxW={{ base: "99%" }}
-                  src={require("../assets/accessibility-image.jpg")}
-                  objectFit="fill"
-                ></Image>
-                <Text align={"left"} paddingTop="1rem" fontSize={"1.5rem"}>
-                  Accessible to everyone
-                </Text>
-              </Box>
-              <Box maxW={"sm"}>
-                <Image
-                  // maxW={{ base: "90%" }}
-                  src={require("../assets/small-lavender-field.png")}
-                  scale="20%"
-                  objectFit="fill"
-                ></Image>
-                <Text align={"left"} paddingTop="1rem" fontSize={"1.5rem"}>
-                  Latest Technologies
-                </Text>
-              </Box>
-            </Stack>
+        <Stack
+          direction={"column"}
+          paddingTop={"5rem"}
+          backgroundColor="white"
+          // ml={"10rem"}
+        >
+          <Text align={"left"} fontSize="3xl" fontWeight={"bold"}>
+            Our Mission
+          </Text>
+          <Stack direction={"row"} paddingTop={"3rem"}>
+            <Box maxW={"sm"}>
+              <Image
+                src={require("../assets/small-lavender-field.png")}
+                // maxW={{ base: "90%" }}
+                objectFit="fill"
+              ></Image>
+              <Text align={"left"} paddingTop="1rem" fontSize={"1.5rem"}>
+                Supporing small-scale farmers
+              </Text>
+            </Box>
+            <Box maxW={"sm"}>
+              <Image
+                // maxW={{ base: "99%" }}
+                src={require("../assets/accessibility-image.jpg")}
+                objectFit="fill"
+              ></Image>
+              <Text align={"left"} paddingTop="1rem" fontSize={"1.5rem"}>
+                Accessible to everyone
+              </Text>
+            </Box>
+            <Box maxW={"sm"}>
+              <Image
+                // maxW={{ base: "90%" }}
+                src={require("../assets/small-lavender-field.png")}
+                scale="20%"
+                objectFit="fill"
+              ></Image>
+              <Text align={"left"} paddingTop="1rem" fontSize={"1.5rem"}>
+                Latest Technologies
+              </Text>
+            </Box>
           </Stack>
-          
+        </Stack>
       </Center>
       <Center backgroundColor="white">
         <HStack>
@@ -166,7 +168,85 @@ function HomePage() {
             backgroundColor="white"
             // ml={"10rem"}
           >
-            <Text align={"left"} fontSize="3xl" fontWeight={"bold"} paddingRight="10rem">
+            <Text
+              align={"left"}
+              fontSize="3xl"
+              fontWeight={"bold"}
+              paddingRight="10rem"
+            >
+              Our Blog
+            </Text>
+            <Stack direction={"row"} paddingTop={"3rem"}>
+              <Card maxW={"sm"}>
+                <CardBody>
+                  <Image
+                    src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                    alt="Green double couch with wooden legs"
+                    borderRadius="lg"
+                  />
+                  <Stack mt={6}>
+                    <Heading size={"md"}>Sofa</Heading>
+                    <Text>
+                      This sofa is perfect for modern tropical spaces, baroque
+                      inspired spaces, earthy toned spaces and for people who
+                      love a chic design with a sprinkle of vintage design.
+                    </Text>
+                  </Stack>
+                </CardBody>
+              </Card>
+              <Card maxW={"sm"}>
+                <CardBody>
+                  <Image
+                    src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                    alt="Green double couch with wooden legs"
+                    borderRadius="lg"
+                  />
+                  <Stack mt={6}>
+                    <Heading size={"md"}>Sofa</Heading>
+                    <Text>
+                      This sofa is perfect for modern tropical spaces, baroque
+                      inspired spaces, earthy toned spaces and for people who
+                      love a chic design with a sprinkle of vintage design.
+                    </Text>
+                  </Stack>
+                </CardBody>
+              </Card>
+              <Card maxW={"sm"}>
+                <CardBody>
+                  <Image
+                    src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                    alt="Green double couch with wooden legs"
+                    borderRadius="lg"
+                  />
+                  <Stack mt={6}>
+                    <Heading size={"md"}>Sofa</Heading>
+                    <Text>
+                      This sofa is perfect for modern tropical spaces, baroque
+                      inspired spaces, earthy toned spaces and for people who
+                      love a chic design with a sprinkle of vintage design.
+                    </Text>
+                  </Stack>
+                </CardBody>
+              </Card>
+              
+            </Stack>
+          </Stack>
+        </HStack>
+      </Center>
+      <Center backgroundColor="white">
+        <HStack>
+          <Stack
+            direction={"column"}
+            paddingTop={"5rem"}
+            backgroundColor="white"
+            // ml={"10rem"}
+          >
+            <Text
+              align={"left"}
+              fontSize="3xl"
+              fontWeight={"bold"}
+              paddingRight="10rem"
+            >
               Our Partners
             </Text>
             <Stack direction={"row"} paddingTop={"3rem"}>
@@ -176,7 +256,6 @@ function HomePage() {
                   // maxW={{ base: "110%" }}
                   objectFit="fill"
                 ></Image>
-
               </Box>
               <Box maxW={"sm"}>
                 <Image
@@ -184,11 +263,9 @@ function HomePage() {
                   src={require("../assets/Linux_Foundation_logo.png")}
                   objectFit="fill"
                 ></Image>
-
               </Box>
             </Stack>
           </Stack>
-          
         </HStack>
       </Center>
     </div>
