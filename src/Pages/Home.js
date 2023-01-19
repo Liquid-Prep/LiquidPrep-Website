@@ -14,6 +14,7 @@ import {
   CardFooter,
   CardBody,
   Heading,
+  Link,
 } from "@chakra-ui/react";
 
 function HomePage() {
@@ -184,12 +185,12 @@ function HomePage() {
                     alt="Green double couch with wooden legs"
                     borderRadius="lg"
                   />
-                  <Stack mt={6}>
-                    <Heading size={"md"}>Sofa</Heading>
+                  <Stack mt={6} textAlign={"left"}>
+                    <Heading size={"md"}>Blog Post Heading</Heading>
                     <Text>
-                      This sofa is perfect for modern tropical spaces, baroque
-                      inspired spaces, earthy toned spaces and for people who
-                      love a chic design with a sprinkle of vintage design.
+                      Quo esse est voluptate maxime amet. Quia quisquam at
+                      repudiandae laboriosam. Et voluptas recusandae ratione
+                      natus nisi assumenda et.
                     </Text>
                   </Stack>
                 </CardBody>
@@ -201,12 +202,12 @@ function HomePage() {
                     alt="Green double couch with wooden legs"
                     borderRadius="lg"
                   />
-                  <Stack mt={6}>
-                    <Heading size={"md"}>Sofa</Heading>
+                  <Stack mt={6} textAlign={"left"}>
+                    <Heading size={"md"}>Blog Post Heading</Heading>
                     <Text>
-                      This sofa is perfect for modern tropical spaces, baroque
-                      inspired spaces, earthy toned spaces and for people who
-                      love a chic design with a sprinkle of vintage design.
+                      Quo esse est voluptate maxime amet. Quia quisquam at
+                      repudiandae laboriosam. Et voluptas recusandae ratione
+                      natus nisi assumenda et.
                     </Text>
                   </Stack>
                 </CardBody>
@@ -218,18 +219,28 @@ function HomePage() {
                     alt="Green double couch with wooden legs"
                     borderRadius="lg"
                   />
-                  <Stack mt={6}>
-                    <Heading size={"md"}>Sofa</Heading>
+                  <Stack mt={6} textAlign={"left"}>
+                    <Heading size={"md"}>Blog Post Heading</Heading>
                     <Text>
-                      This sofa is perfect for modern tropical spaces, baroque
-                      inspired spaces, earthy toned spaces and for people who
-                      love a chic design with a sprinkle of vintage design.
+                      Quo esse est voluptate maxime amet. Quia quisquam at
+                      repudiandae laboriosam. Et voluptas recusandae ratione
+                      natus nisi assumenda et.
                     </Text>
                   </Stack>
                 </CardBody>
               </Card>
-              
             </Stack>
+            <Center paddingTop={"3rem"}>
+              <Link href={"/blogs"}>
+                <Button
+                  borderRadius={10}
+                  backgroundColor="#4F83AE"
+                  textColor={"white"}
+                >
+                  All Blog Posts
+                </Button>
+              </Link>
+            </Center>
           </Stack>
         </HStack>
       </Center>
