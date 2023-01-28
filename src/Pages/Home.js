@@ -150,7 +150,8 @@ function HomePage() {
             <Box maxW={"sm"}>
               <Image
                 // maxW={{ base: "90%" }}
-                src={require("../assets/small-lavender-field.png")}
+                src={require("../assets/irrigation.jpg")}
+                // Image used under CC by 3.0. Credit to Willem van Aken (Photo Taken November 8 1995)
                 scale="20%"
                 objectFit="fill"
               ></Image>
