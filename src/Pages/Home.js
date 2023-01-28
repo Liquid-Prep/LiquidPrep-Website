@@ -6,17 +6,15 @@ import {
   Image,
   Stack,
   Button,
-  Flex,
   HStack,
   Center,
   Card,
-  CardHeader,
-  CardFooter,
   CardBody,
   Heading,
   Link,
 } from "@chakra-ui/react";
 
+import { FaGithub, FaTwitter, FaSlack } from "react-icons/fa";
 function HomePage() {
   return (
     <div>
@@ -108,7 +106,7 @@ function HomePage() {
         src={require("../assets/homepage-background.png")}
         style={{
           position: "relative",
-          width: "100vw",
+          width: "99.4vw",
           maxWidth: "100vw",
           left: "50%",
           right: "50%",
@@ -257,7 +255,7 @@ function HomePage() {
               align={"left"}
               fontSize="3xl"
               fontWeight={"bold"}
-              paddingRight="10rem"
+              paddingRight="20rem"
             >
               Our Partners
             </Text>
@@ -275,6 +273,91 @@ function HomePage() {
                   src={require("../assets/Linux_Foundation_logo.png")}
                   objectFit="fill"
                 ></Image>
+              </Box>
+            </Stack>
+          </Stack>
+        </HStack>
+      </Center>
+      <Center backgroundColor="white" paddingBottom={"10rem"}>
+        <HStack>
+          <Stack
+            direction={"column"}
+            paddingTop={"5rem"}
+            backgroundColor="white"
+            // ml={"10rem"}
+          >
+            <Text
+              align={"left"}
+              fontSize="3xl"
+              fontWeight={"bold"}
+              paddingRight="10rem"
+            >
+              Get Involved
+            </Text>
+            <Stack direction={"row"} paddingTop={"3rem"}>
+              <Box maxW={"sm"} textAlign="left">
+                <Stack>
+                  <Text color="#555555" size={"1rem"}>
+                    JOIN THE PROJECT
+                  </Text>
+                  <Text paddingTop={"1rem"}>
+                    Liquid Prep is an open source project and always welcome
+                    contributions to the project. Please reach out to us if you
+                    are interested in getting involved with the project or would
+                    like to know more!
+                  </Text>
+                </Stack>
+              </Box>
+              <Box maxW={"sm"} textAlign="left" paddingLeft={"2rem"}>
+                <Stack>
+                  <Text color="#555555" size={"1rem"}>
+                    WORK WITH US
+                  </Text>
+                  <Text paddingTop="1rem">
+                    Email:{" "}
+                    <Link
+                      href="mailto:info.liquidprep@gmail.com"
+                      color={"#4a8cb7"}
+                    >
+                      info.liquidprep@gmail.com
+                    </Link>
+                  </Text>
+                  <Text paddingTop={"1rem"}>
+                    Join our weekly public meeting on every Thursday at 4:30 pm
+                    ET on{" "}
+                    <Link
+                      color={"#4a8cb7"}
+                      href={
+                        "https://us05web.zoom.us/j/9124577210?pwd=NDFUV1EvdGFLZWpQb3ZYcm10ZEpxdz09"
+                      }
+                    >
+                      Zoom
+                    </Link>
+                  </Text>
+                </Stack>
+              </Box>
+              <Box>
+                <Text textAlign={"left"}>FOLLOW OUR PROGRESS</Text>
+                <HStack>
+                  <Stack paddingTop={"1rem"} direction={"row"}>
+                    <FaSlack size={"1.3rem"} />
+                    <Link href={"https://callforcode.org/slack"}>
+                      callforcode.org/slack
+                    </Link>
+                    <br />
+                    <Text textAlign={"left"}>channel: #liquid-prep</Text>
+                  </Stack>
+                </HStack>
+                <Stack direction={"row"} paddingTop="1rem">
+                  <FaGithub />
+                  <Link href="https://github.com/Liquid-Prep/Liquid-Prep">
+                    Liquid-Prep/Liquid-Prep
+                  </Link>
+                </Stack>
+                <Stack>
+                  <FaTwitter/>
+                  <Link href="https://twitter.com/PrepLiquid">PrepLiquid</Link>
+                </Stack>
               </Box>
             </Stack>
           </Stack>
