@@ -8,6 +8,7 @@ import {
 
 import HomePage from "./Pages/Home";
 import Navbar from "./common/navbar";
+import Blog from './Pages/Blog'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/Blog" element={<Blog />} />
       </Routes>
     </div>
   );
