@@ -348,15 +348,15 @@ function HomePage() {
                     <Text textAlign={"left"}>channel: #liquid-prep</Text>
                   </Stack>
                 </HStack>
-                <Stack direction={"row"} paddingTop="1rem">
+                <Stack direction="row" paddingTop="1rem">
                   <FaGithub />
                   <Link href="https://github.com/Liquid-Prep/Liquid-Prep">
                     Liquid-Prep/Liquid-Prep
                   </Link>
                 </Stack>
-                <Stack>
-                  <FaTwitter/>
-                  <Link href="https://twitter.com/PrepLiquid">PrepLiquid</Link>
+                <Stack direction="row" paddingTop="1rem">
+                  <FaTwitter />
+                  <Link marginBottom="10px" href="https://twitter.com/PrepLiquid">PrepLiquid</Link>
                 </Stack>
               </Box>
             </Stack>
