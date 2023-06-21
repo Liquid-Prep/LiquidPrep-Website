@@ -1,36 +1,31 @@
-# Idea
-.idea/*
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
 
-# Mac OS
-.DS_Store
+# Local History for Visual Studio Code
+.history/
 
-# Byte-compiled / optimized / DLL files
-*.manifest
-*.spec
+# Built Visual Studio Code Extensions
+*.vsix
+### react
+.DS_*
+*.log
+logs
+**/*.backup.*
+**/*.back.*
 
-# Jekyll dev or build
-_site/*
-_development_tool/*
-.sass-cache/*
-*.css.map
-*.scssc
-.bundle/*
-/vendor/
-.jekyll-cache/*
-*/.jekyll-cache/*
+node_modules
+bower_components
 
-# Theme Gem
-Gemfile.lock
-*.gem
-.gems
-jekyll-theme-type-on-strap.gemspec
+*.sublime*
 
-# Node.js
-**/node_modules/*
-**/package-lock.json
+psd
+thumb
+sketch
 
-# Misc
-*-test.md
-*copy.md
-test/*
-/type-on-strap*/*
+build/
+node_modules
+node_modules
