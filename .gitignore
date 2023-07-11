@@ -17,7 +17,6 @@ logs
 **/*.backup.*
 **/*.back.*
 
-node_modules
 bower_components
 
 *.sublime*
@@ -27,5 +26,4 @@ thumb
 sketch
 
 build/
-node_modules
 node_modules
