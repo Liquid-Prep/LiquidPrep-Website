@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/LiquidPrep-Website/static/css/main.58c86aff.css",
+    "main.js": "/LiquidPrep-Website/static/js/main.82df32e7.js",
+    "static/media/small-lavender-field.png": "/LiquidPrep-Website/static/media/small-lavender-field.50b425a1ec780a28f415.png",
+    "static/media/homepage-background.png": "/LiquidPrep-Website/static/media/homepage-background.3f3272b3664dbc4d31a2.png",
+    "static/media/irrigation.jpg": "/LiquidPrep-Website/static/media/irrigation.e7df3a85b0bc5c5d3991.jpg",
+    "static/media/accessibility-image.jpg": "/LiquidPrep-Website/static/media/accessibility-image.7a2df17ab7e5fac2ae9b.jpg",
+    "static/media/call-for-code.png": "/LiquidPrep-Website/static/media/call-for-code.4d2182f5615f93a1a105.png",
+    "static/media/Linux_Foundation_logo.png": "/LiquidPrep-Website/static/media/Linux_Foundation_logo.e2ef284605008fa3eab2.png",
+    "static/media/logo.png": "/LiquidPrep-Website/static/media/logo.dc5fbea7c1b4a707d060.png",
+    "index.html": "/LiquidPrep-Website/index.html",
+    "main.58c86aff.css.map": "/LiquidPrep-Website/static/css/main.58c86aff.css.map",
+    "main.82df32e7.js.map": "/LiquidPrep-Website/static/js/main.82df32e7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.58c86aff.css",
+    "static/js/main.82df32e7.js"
+  ]
+}
