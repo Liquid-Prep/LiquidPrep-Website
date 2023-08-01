@@ -3,7 +3,7 @@ import {
   // BrowserRouter as Router,
   Route,
   Routes,
-  // Navigate as Redirect,
+  Navigate,
 } from "react-router-dom";
 
 import HomePage from "./Pages/Home";
@@ -24,6 +24,7 @@ function App() {
       </head>
       <Navbar />
       <Routes>
+        <Route path="/LiquidPrep-Website" element={<Navigate replace to="/" />} />
         <Route path="/" element={<HomePage />} />
         <Route path="/Blog" element={<Blog />} />
       </Routes>
