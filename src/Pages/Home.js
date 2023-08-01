@@ -49,7 +49,7 @@ function HomePage() {
         </HStack>
       </Center>
       <Center>
-        <Stack mt={"20rem"} ml={"10rem"}>
+        <Stack mt={"5rem"} ml={"10rem"}>
           <Text align={"left"} fontSize="3xl" fontWeight={"bold"}>
             About Liquid Prep
           </Text>
