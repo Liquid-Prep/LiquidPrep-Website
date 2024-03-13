@@ -46,15 +46,9 @@ const Navbar = () => {
         >
           <ul>
             <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
               <Link to="/blog">Blog</Link>
             </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
-            <Link to="/get-involved">
+            <Link to="https://github.com/Liquid-Prep/Liquid-Prep">
               <button className="btn">Get Involved</button>
             </Link>
             

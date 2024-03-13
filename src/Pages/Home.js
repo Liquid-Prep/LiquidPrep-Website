@@ -21,82 +21,71 @@ function HomePage() {
       <Center padding={"3rem"}>
         <HStack>
           <Stack padding={"1rem"}>
-            <Text align={"left"} fontSize="3xl" fontWeight={"bold"}>
-              Bringing water <br />
-              advice to all farmers.
-            </Text>
-            <br />
-            <Text align={"left"}>
-              Liquid Prep is an open-source project that originates <br />
-              from the winning team's idea of the Internal IBM Call for <br />
-              Code challenge in 2019. Our team is dedicated to <br />
-              helping farmers in developing countries making the <br />
-              right decisions regarding watering their crops.
+            <Box maxW={"sm"}>
+              <Text align={"left"} fontSize="3xl" fontWeight={"bold"}>
+                Bringing watering <br />
+                advice to all farmers.
+              </Text>
               <br />
-            </Text>
+              <Text align={"left"}>
+                Liquid Prep is an open-source project that originates from the winning 
+                idea of the internal IBM Call for Code challenge in 2019. Our team is 
+                dedicated to bringing the solution to life by helping farmers in developing 
+                countries make the right decisions regarding watering their crops.
+                <br />
+              </Text>
+            </Box>
             <Button
-              borderRadius={"100px"}
-              background={"#fffffff"}
-              borderColor={"black"}
-              padding={"1rem"}
-              variant={"outline"}
-              width={"10rem"}
-            >
-              Get Involved
+                borderRadius={"100px"}
+                background={"#fffffff"}
+                borderColor={"black"}
+                padding={"1rem"}
+                variant={"outline"}
+                width={"10rem"}
+              >
+                <Link href="https://github.com/Liquid-Prep/Liquid-Prep">
+                  Get Involved
+                </Link>
             </Button>
           </Stack>
           <Image src={require("../assets/logo.png")} />
         </HStack>
       </Center>
       <Center>
-        <Stack mt={"5rem"} ml={"10rem"}>
+        <Stack mt={"2rem"} ml={"10rem"}>
           <Text align={"left"} fontSize="3xl" fontWeight={"bold"}>
             About Liquid Prep
           </Text>
           <HStack>
-            <Text mt={10} align={"left"}>
-              Our idea is to provide a very easy-to-use mobile application to{" "}
-              <br />
-              provide watering advice to farmers. The solution uses a <br />
-              combination of diverse data of weather forecasts, crop <br />
-              information, and on-the-spot soil humidity measurements to <br />
-              generate watering advice. The advice is easily accessed on any{" "}
-              <br />
-              mobile device that are used so frequently over the world. <br />
-              <br />
-              <br />
-              Winning the Call for Code was the start of our adventure. We never{" "}
-              <br />
-              expected to win, but once we did we were inspired to help the{" "}
-              <br />
-              farmers in the world cope with the changing climate. Extreme{" "}
-              <br />
-              weather conditions makes it difficult for farmers to assess the{" "}
-              <br />
-              right amount of water required for their crops. With our solution{" "}
-              <br />
-              we help them manage their watering decisions. <br />
-            </Text>
             <Box>
-              <Text align={"left"} ml={20}>
-                Participation is welcomed from software developers, designers,{" "}
-                <br />
-                testers, agronomists/agri experts/soil experts, IoT engineers,{" "}
-                <br />
-                researchers, students, farmers, and others that can help improve{" "}
-                <br />
-                the quality and value of the solution for small farmers around
-                the <br />
-                world. Key areas the team are interested in developing include{" "}
-                <br />
-                localizing the mobile app, considering soil properties for the{" "}
-                <br />
-                improvement of the watering advice, updating project <br />
-                documentation, software and hardware testing, more in-depth{" "}
-                <br />
-                research, and adding more crop data to the database <br />
+              <Text align={"left"} maxW='75%' mt={10}  >
+                Our goal is to provide farmers with accessible crop watering advice. 
+                The solution uses a combination of diverse data sources including local 
+                weather forecasts, crop specific information, and on-the-spot soil 
+                humidity measurements to provide farmers with easy to interpret crop 
+                watering advice. The advice is easily accessed on any mobile device 
+                that are used so frequently around the world today. 
                 <br />
                 <br />
+                Winning the Call for Code competition was the start of our adventure. 
+                We never expected to win. But the amazing support and enthusiasm 
+                surrounding our work inspired us to push for a real change. Small 
+                farmers all around the world are struggling with changing climate 
+                conditions and increased extreme weather events. Most farmers don’t 
+                have the means for advanced farming/watering solutions. It’s becoming 
+                more difficult to successfully manage a farm and its crops - especially 
+                with a limited water supply. We plan to change that.
+              </Text>
+            </Box>
+            <Box>
+              <Text align={"left"} maxW='75%' >
+                Participation is welcomed from software developers, designers, testers, 
+                agronomists/agri experts/soil experts, IoT engineers, researchers, students, 
+                farmers, and others that can help bring our solution to life. Key areas 
+                our team is working in include: developing the mobile app, building soil 
+                moisture IoT sensors, creating a detailed database of crop specific information, 
+                and the building of our watering advice algorithm (using both traditional and AI 
+                approaches). All areas have room for new participants!
               </Text>
             </Box>
           </HStack>
@@ -113,6 +102,7 @@ function HomePage() {
           marginLeft: "-50vw",
           marginRight: "-50vw",
         }}
+        mt={"2rem"}
       />
       <Center backgroundColor="white">
         <Stack
@@ -154,7 +144,7 @@ function HomePage() {
                 objectFit="fill"
               ></Image>
               <Text align={"left"} paddingTop="1rem" fontSize={"1.5rem"}>
-                Latest Technologies
+                Latest technologies
               </Text>
             </Box>
           </Stack>
@@ -230,7 +220,7 @@ function HomePage() {
               </Card>
             </Stack>
             <Center paddingTop={"3rem"}>
-              <Link href={"/blogs"}>
+              <Link href={"/blog"}>
                 <Button
                   borderRadius={10}
                   backgroundColor="#4F83AE"
@@ -301,8 +291,8 @@ function HomePage() {
                     JOIN THE PROJECT
                   </Text>
                   <Text paddingTop={"1rem"}>
-                    Liquid Prep is an open source project and always welcome
-                    contributions to the project. Please reach out to us if you
+                    Liquid Prep is an open source project and always welcomes
+                    new contributors to the project. Please reach out to us if you
                     are interested in getting involved with the project or would
                     like to know more!
                   </Text>
@@ -368,4 +358,3 @@ function HomePage() {
 }
 
 export default HomePage;
-
